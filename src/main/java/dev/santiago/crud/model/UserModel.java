@@ -13,6 +13,10 @@ public class UserModel {
     private String name;
     private String email;
 
+    @ManyToOne
+    @JoinColumn(name = "work_id")
+    private WorkModel work;
+
     public UserModel() {
     }
 
